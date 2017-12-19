@@ -1,0 +1,23 @@
+img {
+    width: 350px;
+    position: relative;
+    margin: 0;
+}
+
+h3 {
+    position: absolute;
+    z-index: 10;
+}
+
+#logo {
+    width: 150px;
+    display: inline-block;
+}
+
+#navigation {
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+}
