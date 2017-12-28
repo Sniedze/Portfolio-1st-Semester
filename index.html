@@ -7,51 +7,63 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <div id="logo">
+        <img id="log" src="images/logo.png" alt="So Perfect logo">
+        <p>by Ulrika</p>
+    </div>
+    <div id="navigation">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="web.html">Web Design</a></li>
+                <li><a href="#">Digital Agency</a></li>
+                <li><a href="#">Animations</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">About me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
 <div id="grid">
-    <header>
-        <div id="logo">
-            <img id="log" src="images/logo.jpg" alt="So Perfect logo">
-            <p>by Ulrika</p>
-        </div>
-        <div id="navigation">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Digital Agency</a></li>
-                    <li><a href="#">Animations</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">About me</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-    <h1> This is the portfolio of the KEA`s 1st semester student Ulrika Sniedze</h1>
-    <h2 id="web_head"> Web Design</h2>
-    <div id="design">
-        <section>
-            <h3>Responsive Website</h3>
-            <img src="images/banksy.png">
-        </section>
-        <section>
-            <h3>Website Redesign</h3>
-            <img src="images/home-2.jpg">
-
-        </section>
-    </div>
-    <h2 id="anim_head"> Animations</h2>
-    <div id="animations">
-        <img src="">
-        <h3>Responsive Website</h3>
-        <img src="">
-        <h3>Responsive Website</h3>
-
-    </div>
 
     <body>
+        <h1 id="slogan"> This is the portfolio of the KEA`s 1st semester student Ulrika Sniedze</h1>
+        <div id="webSection">
+
+            <h2 id="web_head"> Web Design</h2>
+            <div id="design">
+                <h3>Responsive Website</h3>
+                <div class="swap">
+                </div>
+
+            </div>
+            <div id="redesign">
+                <h3>Website Redesign</h3>
+                <div class="swap">
+
+                </div>
+            </div>
+        </div>
+        <!--<section>
+                <h3>Website Redesign</h3>
+                <img class="scalable" src="images/home-2.jpg">
+
+            </section>-->
+
+        <!--<h2 id="anim_head"> Animations</h2>
+        <div id="animations">
+            <img src="">
+            <h3>Responsive Website</h3>
+            <img src="">
+            <h3>Responsive Website</h3>
+
+        </div>-->
+
+
 
         <script src="script.js"></script>
     </body>

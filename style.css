@@ -1,21 +1,51 @@
-section img {
-    width: 210px;
-    position: relative;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 65px;
-    transition: all .2s ease-in-out;
-    z-index: 0;
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/kea.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section img:hover {
-    transform: scale(1.5);
+header {
+    background-color: #FEEB89;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.swap {
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    background-image: url(images/mobile/banksy_low.png);
+}
+
+@keyframes change {
+    0% {
+        background-image: url(images/mobile/banksy_low.png);
+    }
+    25% {
+        background-image: url(images/mobile/web_low.png);
+    }
+    50% {
+        background-image: url(images/mobile/moodboard_low.png);
+    }
+    75% {
+        background-image: url(images/mobile/web_logo_low.png);
+    }
+    100% {
+        background-image: url(images/mobile/web_xd_low.png);
+    }
+}
+
+.swap:hover {
+    animation: change 8s infinite;
 }
 
 h3 {
-    z-index: 1000;
-    color: red;
-    font-size: 1.5em;
+    color: #AB5055;
+    font-size: 1.8em;
 }
 
 #logo {
@@ -26,29 +56,28 @@ h3 {
 }
 
 #log {
-    width: 150px;
+    width: 130px;
 }
 
 h1 {
     font-size: 1.8em;
     font-family: Bookman Old Style;
     text-align: center;
-    margin-top: 35px;
     margin-bottom: 35px;
-    background-color: floralwhite;
     font-weight: 400;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-top: 205px;
 }
 
 h2 {
-    text-align: center;
     font-family: Bookman Old Style;
     font-size: 2em;
+    width: 250px;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: Montserrat;
     display: block;
     text-align: center;
@@ -107,4 +136,63 @@ nav a:active {
     color: darkgray;
     background-color: transparent;
     text-decoration: underline;
+}
+
+#webSection {
+    background-color: #FAC5C1;
+}
+
+#web_head {
+    grid-area: webDesign;
+}
+
+#design {
+    grid-area: responsiveDesign;
+}
+
+#redesign {
+    grid-area: basicRedesign;
+    background-color: #FAC5C1;
+}
+
+#slogan {
+    grid-area: slogan;
+}
+
+
+/*//////////////////desktop style FOR frontpage/////////////////////*/
+
+@media only screen and (min-width:666px) {
+    .swap {
+        width: 450px;
+        height: 366px;
+        border-radius: 25px;
+        background-image: url(images/desktop/web_low.png);
+    }
+    @keyframes change {
+        0% {
+            background-image: url(images/desktop/web_low.png);
+        }
+        25% {
+            background-image: url(images/desktop/moodboard_low.png);
+        }
+        50% {
+            background-image: url(images/desktop/web_logo_low.png);
+        }
+        75% {
+            background-image: url(images/desktop/web_xd_low.png);
+        }
+        100% {
+            background-image: url(images/desktop/web_perfect_low.png);
+        }
+    }
+    .swap:hover {
+        animation: change 8s infinite;
+    }
+}
+
+#grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: ". slogan ." "webDesign responsiveDesign basicRedesign";
 }
