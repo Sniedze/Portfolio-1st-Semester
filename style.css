@@ -1,10 +1,6 @@
 body {
     width: 100vw;
-    height: 100vh;
-    background-image: url(images/kea.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,7 +13,6 @@ header {
 .swap {
     width: 300px;
     height: 250px;
-    border-radius: 25px;
     background-image: url(images/mobile/banksy_low.png);
 }
 
@@ -44,7 +39,7 @@ header {
 }
 
 h3 {
-    color: #AB5055;
+    color: #644E5B;
     font-size: 1.8em;
 }
 
@@ -60,20 +55,26 @@ h3 {
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: Bookman Old Style;
     text-align: center;
     margin-bottom: 35px;
     font-weight: 400;
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-top: 205px;
+    margin-top: 135px;
+    color: #644E5B;
+    border-bottom: solid;
+    border-bottom-color:
 }
 
 h2 {
     font-family: Bookman Old Style;
     font-size: 2em;
     width: 250px;
+    color: #D1BEB7;
+    text-align: center;
+    text-shadow: 2px 1px 5px black;
 }
 
 p {
@@ -107,9 +108,8 @@ label {
 nav {
     max-height: 0;
     overflow: hidden;
-    background-color: dimgray;
+    background-color: #B8C5CB;
     opacity: 0.8;
-    height: 100%;
     padding-right: 2vw;
 }
 
@@ -127,7 +127,7 @@ nav a {
 }
 
 nav a:hover {
-    color: grey;
+    color: #585C5D;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -144,15 +144,25 @@ nav a:active {
 
 #web_head {
     grid-area: webDesign;
+    width: 100%;
+    border-width: 20px;
+    margin: 0;
 }
 
 #design {
     grid-area: responsiveDesign;
+    background-color: #FAC5C1;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 #redesign {
     grid-area: basicRedesign;
     background-color: #FAC5C1;
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 #slogan {
@@ -163,10 +173,19 @@ nav a:active {
 /*//////////////////desktop style FOR frontpage/////////////////////*/
 
 @media only screen and (min-width:666px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(images/kea2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    /*//////////DESKTOP Web design/////////////////*/
     .swap {
         width: 450px;
         height: 366px;
-        border-radius: 25px;
+        margin: 0 auto;
         background-image: url(images/desktop/web_low.png);
     }
     @keyframes change {
@@ -188,11 +207,273 @@ nav a:active {
     }
     .swap:hover {
         animation: change 8s infinite;
+        cursor: pointer;
     }
-}
-
-#grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: ". slogan ." "webDesign responsiveDesign basicRedesign";
+    h1 {
+        color: #644E5B;
+        font-size: 2.2em;
+        border-bottom: none;
+        margin-bottom: 50px;
+        margin-top: 180px;
+    }
+    h2 {
+        font-family: Bookman Old Style;
+        font-size: 5em;
+        width: 250px;
+        color: #D1BEB7;
+        text-align: center;
+        text-shadow: 2px 1px 5px black;
+        padding-top: 110px;
+    }
+    h3 {
+        font-size: 2.5em;
+        margin: 0 auto;
+    }
+    #web_head {
+        grid-area: webDesign;
+        border: solid;
+        border-color: #FAC5C1;
+        width: 100%;
+        border-width: 45px;
+        margin: 0;
+    }
+    /*//////////DESKTOP Simple Animation/////////////////*/
+    #kungfu {
+        grid-area: pandas;
+        flex-wrap: wrap;
+        background-color: #E9E2D8;
+        width: 100%;
+        height: 40vh;
+        text-align: center;
+        margin-top: 150px;
+        cursor: pointer;
+    }
+    #panda,
+    #fu {
+        height: 280px;
+        margin: 0 auto;
+    }
+    #animation_head {
+        grid-area: animHead;
+        margin-top: 150px;
+        border: solid;
+        border-color: #E9E2D8;
+        width: 100%;
+        border-width: 45px;
+        height: 19vh;
+        margin-bottom: 0;
+    }
+    #simple_head {
+        flex: 1 1 100%;
+    }
+    .kungJump {
+        animation: jumpIt infinite 1.2s forwards;
+    }
+    .fuJump {
+        animation: jumpIt 1.2s 0.6s infinite;
+    }
+    @keyframes jumpIt {
+        50% {
+            transform: translateY(-30vh);
+            transition-timing-function: ease-in;
+        }
+    }
+    /*//////////DESKTOP Interactive Animation/////////////////*/
+    #interactive_anim {
+        grid-area: interactive;
+        width: 100%;
+        height: 40vh;
+        margin-top: 150px;
+        background-color: #E9E2D8;
+        cursor: pointer;
+    }
+    #mom {
+        background-image: url(images/desktop/sprite4.png);
+        width: 150.625px;
+        height: 250px;
+        background-repeat: no-repeat;
+    }
+    .mom_moves {
+        animation: walk 2s steps(8) forwards infinite;
+    }
+    @keyframes walk {
+        to {
+            background-position: -1205px;
+        }
+    }
+    #trololo {
+        width: 150.625px;
+        display: inline-block;
+    }
+    .trololo_moves {
+        animation: movement 8s forwards;
+    }
+    #background {
+        width: 450px;
+        height: 300px;
+        background-image: url(images/desktop/backgr1.png);
+    }
+    @keyframes movement {
+        from {
+            transform: translateX(3vw);
+        }
+        to {
+            transform: translateX(30vw);
+        }
+    }
+    /*//////////DESKTOP Pool1/////////////////*/
+    #pool1 {
+        grid-area: pool1;
+        background-color: #E9E2D8;
+        cursor: pointer;
+    }
+    #pool1_images {
+        width: 450px;
+        height: 366px;
+        margin: 0 auto;
+        background-image: url(images/desktop/sunflowers.png);
+    }
+    @keyframes swap {
+        0% {
+            background-image: url(images/desktop/sunflowers.png);
+        }
+        25% {
+            background-image: url(images/desktop/peonies.png);
+        }
+        50% {
+            background-image: url(images/desktop/peonies2.png);
+        }
+        75% {
+            background-image: url(images/desktop/yellow.png);
+        }
+        100% {
+            background-image: url(images/desktop/lillies.png);
+        }
+    }
+    #pool1_images:hover {
+        animation: swap 8s infinite;
+        cursor: pointer;
+    }
+    /*//////////DESKTOP Pool2/////////////////*/
+    #pool2 {
+        grid-area: pool2;
+        background-color: #E9E2D8;
+        cursor: pointer;
+    }
+    #pool2_image {
+        width: 450px;
+        height: 366px;
+        background-image: url(images/desktop/back_drums.png);
+    }
+    .key {
+        border: 4px solid black;
+        border-radius: 7px;
+        font-size: 1.7rem;
+        padding: 1rem 0.5rem;
+        transition: all 0.07s;
+        width: 45px;
+        height: 25px;
+        text-align: center;
+        color: aliceblue;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0 5px black;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 600;
+        display: inline-block;
+    }
+    .keys {
+        display: inline-block;
+        margin-top: 285px
+    }
+    .playing {
+        transform: scale(1.1);
+        border-color: #ffc600;
+        box-shadow: 0 0 10px #ffc600;
+    }
+    kbd {
+        display: block;
+    }
+    .sound {
+        color: #ffc600;
+        font-size: 1rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    /*//////////DESKTOP Movie Teaser/////////////////*/
+    #teaser_anim {
+        grid-area: teaser;
+        background-color: #E9E2D8;
+        cursor: pointer;
+    }
+    #hitler {
+        background-image: url(images/desktop/hitler.png);
+        width: 220px;
+        height: 300px;
+    }
+    .heilHitler {
+        animation: handUp 2s steps(14);
+    }
+    @keyframes handUp {
+        to {
+            background-position: -3080px;
+        }
+    }
+    /*//////////DESKTOP Digital Agency/////////////////*/
+    #digital_head {
+        grid-area: basicUX;
+        margin-top: 150px;
+        border: solid;
+        border-color: #AB5055;
+        width: 100%;
+        border-width: 45px;
+        height: 19vh;
+        margin-bottom: 0;
+    }
+    #agency {
+        grid-area: digitalAgency;
+        background-color: #AB5055;
+        margin-top: 150px;
+        cursor: pointer;
+    }
+    #boat_container {
+        grid-area: boat;
+        background-color: #AB5055;
+        margin-top: 150px;
+        width: 100%;
+        cursor: pointer;
+    }
+    #logoTransparent {
+        margin-top: 150px;
+    }
+    .float {
+        animation: boatFloats infinite 3s forwards;
+    }
+    @keyframes boatFloats {
+        50% {
+            transform: translateY(-3vw);
+            transition-timing-function: ease-in-out;
+        }
+    }
+    /*//////////DESKTOP NAVIGATION/////////////////*/
+    nav li {
+        width: 250px;
+        text-align: center;
+        display: inline-block;
+    }
+    nav {
+        margin-top: 75px;
+        max-height: 35vh;
+        grid-area: navBar;
+        background: transparent;
+    }
+    nav a {
+        color: black;
+        font-size: 1.8em;
+    }
+    label {
+        display: none;
+    }
+    #grid {
+        display: grid;
+        grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat";
+    }
 }
