@@ -8,38 +8,11 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.swap {
-    width: 300px;
-    height: 250px;
-    background-image: url(images/mobile/banksy_low.png);
-}
-
-@keyframes change {
-    0% {
-        background-image: url(images/mobile/banksy_low.png);
-    }
-    25% {
-        background-image: url(images/mobile/web_low.png);
-    }
-    50% {
-        background-image: url(images/mobile/moodboard_low.png);
-    }
-    75% {
-        background-image: url(images/mobile/web_logo_low.png);
-    }
-    100% {
-        background-image: url(images/mobile/web_xd_low.png);
-    }
-}
-
-.swap:hover {
-    animation: change 8s infinite;
+    padding-bottom: 10px;
 }
 
 h3 {
-    color: #644E5B;
+    color: #F2F2F2;
     font-size: 1.8em;
 }
 
@@ -59,20 +32,20 @@ h1 {
     font-family: Bookman Old Style;
     text-align: center;
     margin-bottom: 35px;
-    font-weight: 400;
+    font-weight: 500;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     margin-top: 135px;
     color: #644E5B;
     border-bottom: solid;
-    border-bottom-color:
+    border-bottom-color: #644E5B;
+    width: 90%;
 }
 
 h2 {
     font-family: Bookman Old Style;
     font-size: 2em;
-    width: 250px;
-    color: #D1BEB7;
+    color: #FEEB89;
     text-align: center;
     text-shadow: 2px 1px 5px black;
 }
@@ -85,6 +58,9 @@ p {
     margin: 0;
 }
 
+
+/*//////////Mobile Navigation/////////////////*/
+
 li {
     list-style: none;
 }
@@ -96,7 +72,7 @@ input {
 label {
     cursor: pointer;
     font-size: 10vw;
-    margin-left: 45vw;
+    margin-left: 40vw;
 }
 
 #navigation {
@@ -109,7 +85,6 @@ nav {
     max-height: 0;
     overflow: hidden;
     background-color: #B8C5CB;
-    opacity: 0.8;
     padding-right: 2vw;
 }
 
@@ -120,16 +95,18 @@ input:checked~nav {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: #644E5B;
     font-family: Montserrat;
     line-height: 30px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
 nav a:hover {
     color: #585C5D;
-    background-color: transparent;
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: 2px;
 }
 
 nav a:active {
@@ -138,8 +115,13 @@ nav a:active {
     text-decoration: underline;
 }
 
-#webSection {
-    background-color: #FAC5C1;
+
+/*//////////Mobile Responsive Web design/////////////////*/
+
+.swap {
+    width: 300px;
+    height: 250px;
+    background-image: url(images/mobile/banksy_low.png);
 }
 
 #web_head {
@@ -153,7 +135,7 @@ nav a:active {
     grid-area: responsiveDesign;
     background-color: #FAC5C1;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 41px;
     text-align: center;
 }
 
@@ -161,7 +143,6 @@ nav a:active {
     grid-area: basicRedesign;
     background-color: #FAC5C1;
     width: 100%;
-    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -181,19 +162,47 @@ nav a:active {
         background-size: cover;
         background-attachment: fixed;
     }
+    h1 {
+        color: #585C5D;
+        font-size: 2.7em;
+        border-bottom: none;
+        margin-bottom: 60px;
+        margin-top: 140px;
+        font-weight: 800;
+        text-align: center;
+        width: 100%;
+    }
+    h2 {
+        font-family: Bookman Old Style;
+        font-size: 5em;
+        color: #FEEB89;
+        text-align: center;
+        text-shadow: 2px 1px 5px black;
+        padding-top: 110px;
+    }
+    h3 {
+        font-size: 2.5em;
+        text-align: center;
+    }
     /*//////////DESKTOP Web design/////////////////*/
     .swap {
-        width: 450px;
-        height: 366px;
+        width: 15vw;
+        height: 20vh;
         margin: 0 auto;
-        background-image: url(images/desktop/web_low.png);
+        background-image: url(images/desktop/moodboard_low.png);
+    }
+    #design {
+        grid-area: responsiveDesign;
+        background-color: #585C5D;
+        width: 100%;
+        padding-bottom: 41px;
     }
     @keyframes change {
         0% {
-            background-image: url(images/desktop/web_low.png);
+            background-image: url(images/desktop/moodboard_low.png);
         }
         25% {
-            background-image: url(images/desktop/moodboard_low.png);
+            background-image: url(images/desktop/web_low.png);
         }
         50% {
             background-image: url(images/desktop/web_logo_low.png);
@@ -209,44 +218,58 @@ nav a:active {
         animation: change 8s infinite;
         cursor: pointer;
     }
-    h1 {
-        color: #644E5B;
-        font-size: 2.2em;
-        border-bottom: none;
-        margin-bottom: 50px;
-        margin-top: 180px;
-    }
-    h2 {
-        font-family: Bookman Old Style;
-        font-size: 5em;
-        width: 250px;
-        color: #D1BEB7;
-        text-align: center;
-        text-shadow: 2px 1px 5px black;
-        padding-top: 110px;
-    }
-    h3 {
-        font-size: 2.5em;
-        margin: 0 auto;
-    }
     #web_head {
         grid-area: webDesign;
         border: solid;
-        border-color: #FAC5C1;
+        border-color: #585C5D;
         width: 100%;
         border-width: 45px;
         margin: 0;
+    }
+    /*//////////DESKTOP Web redesign/////////////////*/
+    #sea {
+        width: 15vw;
+        height: 20vh;
+        background-image: url(images/desktop/1.png);
+    }
+    #redesign {
+        grid-area: basicRedesign;
+        background-color: #585C5D;
+        width: 100%;
+    }
+    @keyframes changing {
+        0% {
+            background-image: url(images/desktop/1.png);
+        }
+        25% {
+            background-image: url(images/desktop/3.png);
+        }
+        50% {
+            background-image: url(images/desktop/4.png);
+        }
+        75% {
+            background-image: url(images/desktop/5.png);
+        }
+        100% {
+            background-image: url(images/desktop/8.png);
+        }
+    }
+    #sea:hover {
+        animation: changing 8s infinite;
+        cursor: pointer;
     }
     /*//////////DESKTOP Simple Animation/////////////////*/
     #kungfu {
         grid-area: pandas;
         flex-wrap: wrap;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
         width: 100%;
         height: 40vh;
         text-align: center;
-        margin-top: 150px;
+        margin-top: 50px;
         cursor: pointer;
+        padding-top: 2px;
+        padding-bottom: 35px;
     }
     #panda,
     #fu {
@@ -255,12 +278,11 @@ nav a:active {
     }
     #animation_head {
         grid-area: animHead;
-        margin-top: 150px;
+        margin-top: 50px;
         border: solid;
-        border-color: #E9E2D8;
+        border-color: #585C5D;
         width: 100%;
         border-width: 45px;
-        height: 19vh;
         margin-bottom: 0;
     }
     #simple_head {
@@ -282,9 +304,8 @@ nav a:active {
     #interactive_anim {
         grid-area: interactive;
         width: 100%;
-        height: 40vh;
-        margin-top: 150px;
-        background-color: #E9E2D8;
+        margin-top: 50px;
+        background-color: #585C5D;
         cursor: pointer;
     }
     #mom {
@@ -312,6 +333,7 @@ nav a:active {
         width: 450px;
         height: 300px;
         background-image: url(images/desktop/backgr1.png);
+        margin: auto 0;
     }
     @keyframes movement {
         from {
@@ -324,14 +346,17 @@ nav a:active {
     /*//////////DESKTOP Pool1/////////////////*/
     #pool1 {
         grid-area: pool1;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
         cursor: pointer;
+        text-align: center;
     }
     #pool1_images {
         width: 450px;
         height: 366px;
         margin: 0 auto;
         background-image: url(images/desktop/sunflowers.png);
+        background-repeat: no-repeat;
+        padding-bottom: 41px;
     }
     @keyframes swap {
         0% {
@@ -357,13 +382,15 @@ nav a:active {
     /*//////////DESKTOP Pool2/////////////////*/
     #pool2 {
         grid-area: pool2;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
         cursor: pointer;
+        text-align: center;
     }
     #pool2_image {
         width: 450px;
         height: 366px;
         background-image: url(images/desktop/back_drums.png);
+        margin: auto;
     }
     .key {
         border: 4px solid black;
@@ -401,13 +428,15 @@ nav a:active {
     /*//////////DESKTOP Movie Teaser/////////////////*/
     #teaser_anim {
         grid-area: teaser;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
         cursor: pointer;
+        text-align: center;
     }
     #hitler {
         background-image: url(images/desktop/hitler.png);
         width: 220px;
         height: 300px;
+        margin: auto 0;
     }
     .heilHitler {
         animation: handUp 2s steps(14);
@@ -420,24 +449,28 @@ nav a:active {
     /*//////////DESKTOP Digital Agency/////////////////*/
     #digital_head {
         grid-area: basicUX;
-        margin-top: 150px;
+        margin-top: 50px;
         border: solid;
-        border-color: #AB5055;
+        border-color: #585C5D;
         width: 100%;
         border-width: 45px;
-        height: 19vh;
-        margin-bottom: 0;
+        padding-bottom: 73px;
+        margin-bottom: 0px;
     }
     #agency {
         grid-area: digitalAgency;
-        background-color: #AB5055;
-        margin-top: 150px;
+        background-color: #585C5D;
+        margin-top: 50px;
         cursor: pointer;
+        padding-bottom: 41px;
+    }
+    #digital_page {
+        padding-left: 50px;
     }
     #boat_container {
         grid-area: boat;
-        background-color: #AB5055;
-        margin-top: 150px;
+        background-color: #585C5D;
+        margin-top: 50px;
         width: 100%;
         cursor: pointer;
     }
@@ -453,6 +486,37 @@ nav a:active {
             transition-timing-function: ease-in-out;
         }
     }
+    /*//////////DESKTOP Alternative video/////////////////*/
+    video {
+        transition: 1s opacity;
+        height: 366px;
+        margin-left: 50px
+    }
+    #video_head {
+        grid-area: videoHead;
+        margin-top: 50px;
+        border: solid;
+        border-color: #585C5D;
+        width: 100%;
+        border-width: 45px;
+        margin-bottom: 0;
+    }
+    #alternative_video {
+        grid-area: alternativeVideo;
+        background-color: #585C5D;
+        margin-top: 50px;
+        padding-bottom: 41px;
+        cursor: pointer;
+    }
+    /*//////////DESKTOP Alternative video/////////////////*/
+    #urbanite {
+        grid-area: urbanVideo;
+        background-color: #585C5D;
+        margin-top: 50px;
+        padding-bottom: 41px;
+        width: 100%;
+        cursor: pointer;
+    }
     /*//////////DESKTOP NAVIGATION/////////////////*/
     nav li {
         width: 250px;
@@ -466,14 +530,17 @@ nav a:active {
         background: transparent;
     }
     nav a {
-        color: black;
+        color: 585C5D;
         font-size: 1.8em;
+    }
+    nav a:hover {
+        padding: 20px;
     }
     label {
         display: none;
     }
     #grid {
         display: grid;
-        grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat";
+        grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat" "videoHead alternativeVideo urbanVideo";
     }
 }

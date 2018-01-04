@@ -223,3 +223,26 @@ boatBackground.addEventListener("click", boatClicked);
 function boatClicked() {
     window.location = "web.html";
 }
+let videoContainer = document.querySelector("#alternative_video");
+let alternativeVideo = document.querySelector("#bgvid");
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    alternativeVideo.removeAttribute("autoplay");
+}
+
+videoContainer.addEventListener("mouseover", videoStarts);
+
+
+function videoStarts() {
+    alternativeVideo.play();
+}
+videoContainer.addEventListener("mouseout", videoEnds);
+
+function videoEnds() {
+    alternativeVideo.play();
+
+}
+videoContainer.addEventListener("click", videoClicked);
+
+function videoClicked() {
+    window.location = "web.html";
+}
