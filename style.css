@@ -1,405 +1,224 @@
-body {
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-header {
-    background-color: #FEEB89;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-h3 {
-    color: #F2F2F2;
-    font-size: 1.8em;
-}
-
-#logo {
-    display: inline-block;
-    width: 150px;
-    grid-area: logo;
-    text-align: center;
-}
-
-#log {
-    width: 130px;
-}
-
-h1 {
-    font-size: 1.5em;
-    font-family: Bookman Old Style;
-    text-align: center;
-    margin-bottom: 35px;
-    font-weight: 500;
-    padding-bottom: 10px;
-    padding-top: 20px;
-    margin-top: 135px;
-    color: #644E5B;
-    border-bottom: solid;
-    border-bottom-color: #644E5B;
-    width: 90%;
-}
-
-h2 {
-    font-family: Bookman Old Style;
-    font-size: 2em;
-    color: #FEEB89;
-    text-align: center;
-    text-shadow: 2px 1px 5px black;
-}
-
-p {
-    font-size: 1.3em;
-    font-family: Montserrat;
-    display: block;
-    text-align: center;
-    margin: 0;
-}
-
-
-/*//////////Mobile Navigation/////////////////*/
-
-li {
-    list-style: none;
-}
-
-input {
-    display: none;
-}
-
-label {
-    cursor: pointer;
-    font-size: 10vw;
-    margin-left: 40vw;
-}
-
-#navigation {
-    display: inline-block;
-    position: absolute;
-    margin-left: 1vw;
-}
-
-nav {
-    max-height: 0;
-    overflow: hidden;
-    background-color: #B8C5CB;
-    padding-right: 2vw;
-}
-
-input:checked~nav {
-    max-height: 25vh;
-    z-index: 5;
-}
-
-nav a {
-    text-decoration: none;
-    color: #644E5B;
-    font-family: Montserrat;
-    line-height: 30px;
-    font-size: 1.2em;
-    font-weight: 900;
-}
-
-nav a:hover {
-    color: #585C5D;
-    background-color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    padding: 2px;
-}
-
-nav a:active {
-    color: darkgray;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-
-/*//////////Mobile Responsive Web design/////////////////*/
-
-.swap {
-    width: 300px;
-    height: 250px;
-    background-image: url(images/mobile/banksy_low.png);
-}
-
-#web_head {
-    grid-area: webDesign;
-    width: 100%;
-    border-width: 20px;
-    margin: 0;
-}
-
-#design {
-    grid-area: responsiveDesign;
-    background-color: #FAC5C1;
-    width: 100%;
-    padding-bottom: 41px;
-    text-align: center;
-}
-
-#redesign {
-    grid-area: basicRedesign;
-    background-color: #FAC5C1;
-    width: 100%;
-    text-align: center;
-}
-
-#slogan {
-    grid-area: slogan;
-}
-
-
-/*//////////////////desktop style FOR frontpage/////////////////////*/
-
-@media only screen and (min-width:666px) {
     body {
         width: 100vw;
-        height: 100vh;
-        background-image: url(images/kea2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        overflow-x: hidden;
     }
-    h1 {
-        color: #585C5D;
-        font-size: 2.7em;
-        border-bottom: none;
-        margin-bottom: 60px;
-        margin-top: 140px;
-        font-weight: 800;
-        text-align: center;
+
+    header {
+        background-color: #FEEB89;
+        position: fixed;
+        top: 0;
         width: 100%;
+        padding-bottom: 10px;
     }
+
+    h3 {
+        color: #644E5B;
+        font-size: 1.8em;
+        font-family: Montserrat;
+        text-align: center;
+    }
+
+    #logo {
+        display: inline-block;
+        width: 150px;
+        grid-area: logo;
+        text-align: center;
+    }
+
+    #log {
+        width: 130px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        font-family: Montserrat;
+        text-align: center;
+        margin-bottom: 35px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        margin-top: 135px;
+        color: #AB5055;
+        border-bottom: solid;
+        border-bottom-color: #644E5B;
+        width: 90%;
+    }
+
     h2 {
         font-family: Bookman Old Style;
-        font-size: 5em;
+        font-size: 2.3em;
         color: #FEEB89;
         text-align: center;
         text-shadow: 2px 1px 5px black;
-        padding-top: 110px;
     }
-    h3 {
-        font-size: 2.5em;
+
+    p {
+        font-size: 1.3em;
+        font-family: Montserrat;
+        display: block;
         text-align: center;
-    }
-    /*//////////DESKTOP Web design/////////////////*/
-    .swap {
-        width: 15vw;
-        height: 20vh;
-        margin: 0 auto;
-        background-image: url(images/desktop/moodboard_low.png);
-    }
-    #design {
-        grid-area: responsiveDesign;
-        background-color: #585C5D;
-        width: 100%;
-        padding-bottom: 41px;
-    }
-    @keyframes change {
-        0% {
-            background-image: url(images/desktop/moodboard_low.png);
-        }
-        25% {
-            background-image: url(images/desktop/web_low.png);
-        }
-        50% {
-            background-image: url(images/desktop/web_logo_low.png);
-        }
-        75% {
-            background-image: url(images/desktop/web_xd_low.png);
-        }
-        100% {
-            background-image: url(images/desktop/web_perfect_low.png);
-        }
-    }
-    .swap:hover {
-        animation: change 8s infinite;
-        cursor: pointer;
-    }
-    #web_head {
-        grid-area: webDesign;
-        border: solid;
-        border-color: #585C5D;
-        width: 100%;
-        border-width: 45px;
         margin: 0;
     }
-    /*//////////DESKTOP Web redesign/////////////////*/
-    #sea {
-        width: 15vw;
-        height: 20vh;
-        background-image: url(images/desktop/1.png);
+    /*//////////Mobile Navigation/////////////////*/
+
+    li {
+        list-style: none;
     }
-    #redesign {
-        grid-area: basicRedesign;
-        background-color: #585C5D;
-        width: 100%;
+
+    input {
+        display: none;
     }
-    @keyframes changing {
-        0% {
-            background-image: url(images/desktop/1.png);
-        }
-        25% {
-            background-image: url(images/desktop/3.png);
-        }
-        50% {
-            background-image: url(images/desktop/4.png);
-        }
-        75% {
-            background-image: url(images/desktop/5.png);
-        }
-        100% {
-            background-image: url(images/desktop/8.png);
-        }
-    }
-    #sea:hover {
-        animation: changing 8s infinite;
+
+    label {
         cursor: pointer;
+        font-size: 10vw;
+        margin-left: 40vw;
     }
-    /*//////////DESKTOP Simple Animation/////////////////*/
-    #kungfu {
-        grid-area: pandas;
-        flex-wrap: wrap;
-        background-color: #585C5D;
+
+    #navigation {
+        display: inline-block;
+        position: absolute;
+        margin-left: 1vw;
+    }
+
+    nav {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #B8C5CB;
+        padding-right: 2vw;
+    }
+
+    input:checked~nav {
+        max-height: 25vh;
+        z-index: 5;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #644E5B;
+        font-family: Montserrat;
+        line-height: 30px;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    nav a:hover {
+        color: #585C5D;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        padding: 2px;
+    }
+
+    nav a:active {
+        color: darkgray;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    /*//////////Mobile Responsive Web design/////////////////*/
+
+    .swap {
+        width: 350px;
+        height: 350px;
+        background-image: url(images/mobile/banksy_low.png);
+        background-repeat: no-repeat;
+    }
+
+    #design {
+        background-color: #E9E2D8;
         width: 100%;
-        height: 40vh;
+        margin: auto 0;
         text-align: center;
-        margin-top: 50px;
-        cursor: pointer;
-        padding-top: 2px;
-        padding-bottom: 35px;
     }
+
+    #redesign {
+        background-color: #E9E2D8;
+        width: 100%;
+        margin: auto 0;
+        text-align: center;
+    }
+
+    #sea {
+        width: 350px;
+        height: 350px;
+        background-image: url(images/desktop/1.png);
+        background-repeat: no-repeat;
+    }
+    /*//////////mobile Simple Animation/////////////////*/
+
+    #kungfu {
+        flex-wrap: wrap;
+        background-color: #E9E2D8;
+        width: 100%;
+        height: 43vh;
+        text-align: center;
+        padding-top: 2px;
+    }
+
     #panda,
     #fu {
-        height: 280px;
+        height: 240px;
+        width: 155px;
         margin: 0 auto;
     }
-    #animation_head {
-        grid-area: animHead;
-        margin-top: 50px;
-        border: solid;
-        border-color: #585C5D;
-        width: 100%;
-        border-width: 45px;
-        margin-bottom: 0;
-    }
+
     #simple_head {
         flex: 1 1 100%;
     }
-    .kungJump {
-        animation: jumpIt infinite 1.2s forwards;
-    }
-    .fuJump {
-        animation: jumpIt 1.2s 0.6s infinite;
-    }
-    @keyframes jumpIt {
-        50% {
-            transform: translateY(-30vh);
-            transition-timing-function: ease-in;
-        }
-    }
-    /*//////////DESKTOP Interactive Animation/////////////////*/
+    /*//////////Mobile Interactive Animation/////////////////*/
+
     #interactive_anim {
-        grid-area: interactive;
         width: 100%;
-        margin-top: 50px;
-        background-color: #585C5D;
-        cursor: pointer;
+        background-color: #E9E2D8;
     }
+
     #mom {
         background-image: url(images/desktop/sprite4.png);
         width: 150.625px;
-        height: 250px;
+        height: 33vh;
         background-repeat: no-repeat;
+        margin-top: 35px;
     }
-    .mom_moves {
-        animation: walk 2s steps(8) forwards infinite;
-    }
-    @keyframes walk {
-        to {
-            background-position: -1205px;
-        }
-    }
-    #trololo {
-        width: 150.625px;
-        display: inline-block;
-    }
-    .trololo_moves {
-        animation: movement 8s forwards;
-    }
+
     #background {
-        width: 450px;
+        width: 100%;
         height: 300px;
         background-image: url(images/desktop/backgr1.png);
-        margin: auto 0;
     }
-    @keyframes movement {
-        from {
-            transform: translateX(3vw);
-        }
-        to {
-            transform: translateX(30vw);
-        }
-    }
-    /*//////////DESKTOP Pool1/////////////////*/
+    /*//////////Mobile Pool1/////////////////*/
+
     #pool1 {
-        grid-area: pool1;
-        background-color: #585C5D;
-        cursor: pointer;
+        background-color: #E9E2D8;
         text-align: center;
     }
+
     #pool1_images {
-        width: 450px;
-        height: 366px;
-        margin: 0 auto;
-        background-image: url(images/desktop/sunflowers.png);
+        width: 100%;
+        height: 300px;
+        background-image: url(images/desktop/lillies.png);
         background-repeat: no-repeat;
-        padding-bottom: 41px;
     }
-    @keyframes swap {
-        0% {
-            background-image: url(images/desktop/sunflowers.png);
-        }
-        25% {
-            background-image: url(images/desktop/peonies.png);
-        }
-        50% {
-            background-image: url(images/desktop/peonies2.png);
-        }
-        75% {
-            background-image: url(images/desktop/yellow.png);
-        }
-        100% {
-            background-image: url(images/desktop/lillies.png);
-        }
-    }
-    #pool1_images:hover {
-        animation: swap 8s infinite;
-        cursor: pointer;
-    }
-    /*//////////DESKTOP Pool2/////////////////*/
+    /*//////////Mobile Pool2/////////////////*/
+
     #pool2 {
-        grid-area: pool2;
-        background-color: #585C5D;
-        cursor: pointer;
+        background-color: #E9E2D8;
         text-align: center;
     }
+
     #pool2_image {
-        width: 450px;
-        height: 366px;
+        width: 100%;
+        height: 300px;
         background-image: url(images/desktop/back_drums.png);
         margin: auto;
     }
+
     .key {
         border: 4px solid black;
         border-radius: 7px;
         font-size: 1.7rem;
         padding: 1rem 0.5rem;
         transition: all 0.07s;
-        width: 45px;
-        height: 25px;
+        width: 25px;
+        height: 10px;
         text-align: center;
         color: aliceblue;
         background-color: rgba(255, 255, 255, 0.8);
@@ -408,139 +227,506 @@ nav a:active {
         font-weight: 600;
         display: inline-block;
     }
+
     .keys {
         display: inline-block;
-        margin-top: 285px
+        margin-top: 200px
     }
+
     .playing {
         transform: scale(1.1);
         border-color: #ffc600;
         box-shadow: 0 0 10px #ffc600;
     }
+
     kbd {
         display: block;
     }
+
     .sound {
         color: #ffc600;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: 'Open Sans Condensed', sans-serif;
     }
-    /*//////////DESKTOP Movie Teaser/////////////////*/
+    /*//////////Mobile Movie Teaser/////////////////*/
+
     #teaser_anim {
         grid-area: teaser;
-        background-color: #585C5D;
-        cursor: pointer;
-        text-align: center;
+        background-color: #E9E2D8;
     }
+
     #hitler {
         background-image: url(images/desktop/hitler.png);
         width: 220px;
         height: 300px;
-        margin: auto 0;
     }
-    .heilHitler {
-        animation: handUp 2s steps(14);
-    }
-    @keyframes handUp {
-        to {
-            background-position: -3080px;
-        }
-    }
-    /*//////////DESKTOP Digital Agency/////////////////*/
-    #digital_head {
-        grid-area: basicUX;
-        margin-top: 50px;
-        border: solid;
-        border-color: #585C5D;
-        width: 100%;
-        border-width: 45px;
-        padding-bottom: 73px;
-        margin-bottom: 0px;
-    }
+    /*//////////Mobile Digital Agency/////////////////*/
+
     #agency {
         grid-area: digitalAgency;
-        background-color: #585C5D;
+        background-color: #E9E2D8;
         margin-top: 50px;
-        cursor: pointer;
-        padding-bottom: 41px;
     }
+
     #digital_page {
-        padding-left: 50px;
+        width: 100%;
+        height: 300px;
     }
+
     #boat_container {
         grid-area: boat;
-        background-color: #585C5D;
-        margin-top: 50px;
+        background-color: #E9E2D8;
         width: 100%;
         cursor: pointer;
+        text-align: center;
     }
+
     #logoTransparent {
-        margin-top: 150px;
+        width: 100px;
+        height: 50px;
     }
+
     .float {
         animation: boatFloats infinite 3s forwards;
     }
+
     @keyframes boatFloats {
         50% {
             transform: translateY(-3vw);
             transition-timing-function: ease-in-out;
         }
     }
-    /*//////////DESKTOP Alternative video/////////////////*/
+    /*//////////Mobile Alternative video/////////////////*/
+
     video {
         transition: 1s opacity;
-        height: 366px;
-        margin-left: 50px
-    }
-    #video_head {
-        grid-area: videoHead;
-        margin-top: 50px;
-        border: solid;
-        border-color: #585C5D;
         width: 100%;
-        border-width: 45px;
-        margin-bottom: 0;
+        height: 300px;
+        cursor: pointer;
     }
+
     #alternative_video {
-        grid-area: alternativeVideo;
-        background-color: #585C5D;
-        margin-top: 50px;
-        padding-bottom: 41px;
-        cursor: pointer;
+        background-color: #E9E2D8;
     }
-    /*//////////DESKTOP Alternative video/////////////////*/
+    /*//////////Mobile Urban video/////////////////*/
+
     #urbanite {
-        grid-area: urbanVideo;
-        background-color: #585C5D;
-        margin-top: 50px;
-        padding-bottom: 41px;
+        padding-bottom: 45px;
+        background-color: #E9E2D8;
+    }
+
+    #urban {
         width: 100%;
-        cursor: pointer;
+        height: 300px;
     }
-    /*//////////DESKTOP NAVIGATION/////////////////*/
-    nav li {
-        width: 250px;
-        text-align: center;
-        display: inline-block;
+    /*//////////////////desktop style FOR frontpage/////////////////////*/
+
+    @media only screen and (min-width:666px) {
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(images/kea2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        #slogan {
+            grid-area: slogan;
+        }
+        h1 {
+            font-size: 2.7em;
+            border-bottom: none;
+            margin-bottom: 0px;
+            margin-top: 140px;
+            font-weight: 800;
+            width: 100%;
+        }
+        h2 {
+            line-height: 37vh;
+            vertical-align: middle;
+            text-shadow: 2px 1px 5px black;
+            font-family: Bookman Old Style;
+            font-size: 5em;
+            text-shadow: 2px 1px 5px black;
+        }
+        h3 {
+            color: #F2F2F2;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        /*//////////DESKTOP Web design/////////////////*/
+        .swap {
+            width: 23vw;
+            height: 32vh;
+            margin: 0 auto;
+            background-image: url(images/desktop/moodboard_low.png);
+        }
+        #design {
+            grid-area: responsiveDesign;
+            background-color: #585C5D;
+            padding-bottom: 41px;
+            text-align: center;
+        }
+        @keyframes change {
+            0% {
+                background-image: url(images/desktop/moodboard_low.png);
+            }
+            25% {
+                background-image: url(images/desktop/web_low.png);
+            }
+            50% {
+                background-image: url(images/desktop/web_logo_low.png);
+            }
+            75% {
+                background-image: url(images/desktop/web_xd_low.png);
+            }
+            100% {
+                background-image: url(images/desktop/web_perfect_low.png);
+            }
+        }
+        .swap:hover {
+            animation: change 8s infinite;
+            cursor: pointer;
+        }
+        #web_head {
+            grid-area: webDesign;
+            border: solid;
+            border-color: #585C5D;
+            padding: 15px 0;
+            width: 100%;
+            border-width: 45px;
+        }
+        /*//////////DESKTOP Web redesign/////////////////*/
+        #sea {
+            width: 23vw;
+            height: 32vh;
+            background-image: url(images/desktop/1.png);
+            background-repeat: no-repeat;
+        }
+        #redesign {
+            grid-area: basicRedesign;
+            background-color: #585C5D;
+            text-align: center;
+            padding-bottom: 41px;
+            margin-right: 65px;
+        }
+        @keyframes changing {
+            0% {
+                background-image: url(images/desktop/1.png);
+            }
+            25% {
+                background-image: url(images/desktop/3.png);
+            }
+            50% {
+                background-image: url(images/desktop/4.png);
+            }
+            75% {
+                background-image: url(images/desktop/5.png);
+            }
+            100% {
+                background-image: url(images/desktop/8.png);
+            }
+        }
+        #sea:hover {
+            animation: changing 8s infinite;
+            cursor: pointer;
+        }
+        /*//////////DESKTOP Simple Animation/////////////////*/
+        #kungfu {
+            grid-area: pandas;
+            flex-wrap: wrap;
+            background-color: #585C5D;
+            width: 100%;
+            height: 43vh;
+            text-align: center;
+            cursor: pointer;
+            padding-top: 2px;
+            padding-bottom: 65px;
+        }
+        #panda,
+        #fu {
+            width: auto;
+            height: 32vh;
+            margin: 0 auto;
+        }
+        #animation_head {
+            grid-area: animHead;
+            margin-top: 0px;
+            border: solid;
+            border-color: #585C5D;
+            width: 100%;
+            border-width: 45px;
+            margin-bottom: 0;
+        }
+        #simple_head {
+            flex: 1 1 100%;
+        }
+        .kungJump {
+            animation: jumpIt infinite 1.2s forwards;
+        }
+        .fuJump {
+            animation: jumpIt 1.2s 0.6s infinite;
+        }
+        @keyframes jumpIt {
+            50% {
+                transform: translateY(-30vh);
+                transition-timing-function: ease-in;
+            }
+        }
+        /*//////////DESKTOP Interactive Animation/////////////////*/
+        #interactive_anim {
+            grid-area: interactive;
+            width: 100%;
+            margin-top: 0px;
+            background-color: #585C5D;
+            padding-bottom: 41px;
+        }
+        #mom {
+            background-image: url(images/desktop/sprite4.png);
+            width: 150.625px;
+            height: 33vh;
+            background-repeat: no-repeat;
+            margin-top: 35px;
+        }
+        .mom_moves {
+            animation: walk 2s steps(8) forwards infinite;
+        }
+        @keyframes walk {
+            to {
+                background-position: -1205px;
+            }
+        }
+        #trololo {
+            width: 150.625px;
+            display: inline-block;
+        }
+        .trololo_moves {
+            animation: movement 8s forwards;
+        }
+        #background {
+            width: 23vw;
+            height: 32vh;
+            background-image: url(images/desktop/backgr1.png);
+            cursor: pointer;
+        }
+        @keyframes movement {
+            from {
+                transform: translateX(3vw);
+            }
+            to {
+                transform: translateX(30vw);
+            }
+        }
+        /*//////////DESKTOP Pool1/////////////////*/
+        #pool1 {
+            grid-area: pool1;
+            background-color: #585C5D;
+            text-align: center;
+            padding-bottom: 41px;
+            margin-top: 10px;
+        }
+        #pool1_images {
+            width: 23vw;
+            height: 33vh;
+            margin: 0 auto;
+            background-image: url(images/desktop/sunflowers.png);
+            background-repeat: no-repeat;
+        }
+        @keyframes swap {
+            0% {
+                background-image: url(images/desktop/sunflowers.png);
+            }
+            25% {
+                background-image: url(images/desktop/peonies.png);
+            }
+            50% {
+                background-image: url(images/desktop/peonies2.png);
+            }
+            75% {
+                background-image: url(images/desktop/yellow.png);
+            }
+            100% {
+                background-image: url(images/desktop/lillies.png);
+            }
+        }
+        #pool1_images:hover {
+            animation: swap 8s infinite;
+            cursor: pointer;
+        }
+        /*//////////DESKTOP Pool2/////////////////*/
+        #pool2 {
+            grid-area: pool2;
+            background-color: #585C5D;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #pool2_image {
+            width: 23vw;
+            height: 33vh;
+            background-image: url(images/desktop/back_drums.png);
+            margin: auto;
+            cursor: pointer;
+        }
+        .key {
+            border: 4px solid black;
+            border-radius: 7px;
+            font-size: 1.7rem;
+            padding: 1rem 0.5rem;
+            transition: all 0.07s;
+            width: 45px;
+            height: 25px;
+            text-align: center;
+            color: aliceblue;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-shadow: 0 0 5px black;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .keys {
+            display: inline-block;
+            margin-top: 285px
+        }
+        .playing {
+            transform: scale(1.1);
+            border-color: #ffc600;
+            box-shadow: 0 0 10px #ffc600;
+        }
+        kbd {
+            display: block;
+        }
+        .sound {
+            color: #ffc600;
+            font-size: 1rem;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        /*//////////DESKTOP Movie Teaser/////////////////*/
+        #teaser_anim {
+            grid-area: teaser;
+            background-color: #585C5D;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #hitler {
+            background-image: url(images/desktop/hitler.png);
+            width: 220px;
+            height: 300px;
+        }
+        .heilHitler {
+            animation: handUp 1.5s steps(14);
+        }
+        @keyframes handUp {
+            to {
+                background-position: -3080px;
+            }
+        }
+        /*//////////DESKTOP Digital Agency/////////////////*/
+        #digital_head {
+            grid-area: basicUX;
+            margin-top: 50px;
+            border: solid;
+            border-color: #585C5D;
+            width: 100%;
+            border-width: 45px;
+            padding-bottom: 73px;
+            margin-bottom: 0px;
+        }
+        #agency {
+            grid-area: digitalAgency;
+            background-color: #585C5D;
+            margin-top: 50px;
+            padding-bottom: 41px;
+            text-align: center;
+        }
+        #digital_page {
+            width: 23vw;
+            height: 33vh;
+            cursor: pointer;
+        }
+        #boat_container {
+            grid-area: boat;
+            background-color: #585C5D;
+            margin-top: 50px;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+        }
+        #logoTransparent {
+            margin-top: 150px;
+            width: 80%;
+            height: auto;
+        }
+        .float {
+            animation: boatFloats infinite 3s forwards;
+        }
+        @keyframes boatFloats {
+            50% {
+                transform: translateY(-3vw);
+                transition-timing-function: ease-in-out;
+            }
+        }
+        /*//////////DESKTOP Alternative video/////////////////*/
+        video {
+            transition: 1s opacity;
+            height: 33vh;
+            cursor: pointer;
+        }
+        #video_head {
+            grid-area: videoHead;
+            margin-top: 50px;
+            border: solid;
+            border-color: #585C5D;
+            width: 100%;
+            border-width: 45px;
+            margin-bottom: 0;
+        }
+        #alternative_video {
+            grid-area: alternativeVideo;
+            background-color: #585C5D;
+            margin-top: 50px;
+            padding-bottom: 41px;
+            text-align: center;
+        }
+        /*//////////DESKTOP Alternative video/////////////////*/
+        #urbanite {
+            grid-area: urbanVideo;
+            background-color: #585C5D;
+            margin-top: 50px;
+            padding-bottom: 41px;
+            width: 100%;
+            text-align: center;
+            margin-right: 65px;
+        }
+        #urban {
+            width: 23vw;
+            height: 33vh;
+            cursor: pointer;
+        }
+        /*//////////DESKTOP NAVIGATION/////////////////*/
+        nav li {
+            width: 250px;
+            text-align: center;
+            display: inline-block;
+        }
+        nav {
+            margin-top: 75px;
+            max-height: 35vh;
+            grid-area: navBar;
+            background: transparent;
+        }
+        nav a {
+            color: 585C5D;
+            font-size: 1.8em;
+        }
+        nav a:hover {
+            padding: 20px;
+        }
+        label {
+            display: none;
+        }
+        #grid {
+            display: grid;
+            grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat" "videoHead alternativeVideo urbanVideo";
+        }
     }
-    nav {
-        margin-top: 75px;
-        max-height: 35vh;
-        grid-area: navBar;
-        background: transparent;
-    }
-    nav a {
-        color: 585C5D;
-        font-size: 1.8em;
-    }
-    nav a:hover {
-        padding: 20px;
-    }
-    label {
-        display: none;
-    }
-    #grid {
-        display: grid;
-        grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat" "videoHead alternativeVideo urbanVideo";
-    }
-}

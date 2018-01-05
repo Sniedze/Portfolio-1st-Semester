@@ -30,7 +30,7 @@ function pandaClicked() {
 }
 let trololoMom = document.querySelector("#mom");
 let momContainer = document.querySelector("#trololo");
-let interactiveImage = document.querySelector("#interactive_anim");
+let interactiveImage = document.querySelector("#background");
 interactiveImage.addEventListener("mouseenter", trololoEntered);
 
 function trololoEntered() {
@@ -49,11 +49,11 @@ function interactiveClicked() {
     window.location = "web.html";
 }
 
-let flowers = document.querySelector("#pool1");
+let flowers = document.querySelector("#pool1_images");
 flowers.addEventListener("click", flowersClicked);
 
 function flowersClicked() {
-    window.location = "web.html";
+    window.location = "http://soperfect.dk/kea/02-animation/pool1/";
 }
 
 let a = document.querySelector("#a");
@@ -173,11 +173,11 @@ function clicked(evt) {
             break;
     }
 }
-let drums = document.querySelector("#pool2");
+let drums = document.querySelector("#pool2_image");
 drums.addEventListener("click", drumsClicked);
 
 function drumsClicked() {
-    window.location = "web.html";
+    window.location = "http://soperfect.dk/kea/02-animation/drums/";
 }
 let hit = document.querySelector("#teaser_anim");
 let heilMyself = document.querySelector("#myself");
@@ -202,7 +202,7 @@ function teaserClicked() {
 }
 
 let boat = document.querySelector("#logoTransparent");
-let boatContainer = document.querySelector("#agency")
+let boatContainer = document.querySelector("#digital_page")
 let boatBackground = document.querySelector("#boat_container")
 boat.addEventListener("mouseover", float);
 boatContainer.addEventListener("mouseover", float);
@@ -229,19 +229,19 @@ if (window.matchMedia('(prefers-reduced-motion)').matches) {
     alternativeVideo.removeAttribute("autoplay");
 }
 
-videoContainer.addEventListener("mouseover", videoStarts);
+alternativeVideo.addEventListener("mouseover", videoStarts);
 
 
 function videoStarts() {
     alternativeVideo.play();
 }
-videoContainer.addEventListener("mouseout", videoEnds);
+alternativeVideo.addEventListener("mouseout", videoEnds);
 
 function videoEnds() {
     alternativeVideo.play();
 
 }
-videoContainer.addEventListener("click", videoClicked);
+alternativeVideo.addEventListener("click", videoClicked);
 
 function videoClicked() {
     window.location = "web.html";
