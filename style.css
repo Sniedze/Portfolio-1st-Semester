@@ -1,174 +1,706 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #FEEB89;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #644E5B;
+    font-size: 1.8em;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+#logo {
+    display: inline-block;
+    width: 150px;
+    grid-area: logo;
+    text-align: center;
+}
+
+#log {
+    width: 130px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-top: 135px;
+    color: #AB5055;
+    border-bottom: solid;
+    border-bottom-color: #644E5B;
+    width: 90%;
+}
+
+h2 {
+    font-family: Bookman Old Style;
+    font-size: 2.3em;
+    color: #FEEB89;
+    text-align: center;
+    text-shadow: 2px 1px 5px black;
+}
+
+p {
+    font-size: 1.3em;
+    font-family: Montserrat;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+
+}
+
+/*//////////Mobile Navigation/////////////////*/
+li {
+    list-style: none;
+}
+input {
+    display: none;
+}
+label {
+    cursor: pointer;
+    font-size: 10vw;
+    margin-left: 40vw;
+}
+#navigation {
+    display: inline-block;
+    position: absolute;
+    margin-left: 1vw;
+}
+nav {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #B8C5CB;
+    padding-right: 2vw;
+}
+input:checked~nav {
+    max-height: 25vh;
+    z-index: 5;
+}
+nav a {
+    text-decoration: none;
+    color: #644E5B;
+    font-family: Montserrat;
+    line-height: 30px;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+nav a:hover {
+    color: #585C5D;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: 2px;
+}
+#index #navigation .index,
+#web #navigation .web,
+#about #navigation .about,
+#animations #navigation .animations {
+    font-size: 1.4em;
+}
+
+/*//////////Mobile Responsive Web design/////////////////*/
+.swap {
+    width: 350px;
+    height: 350px;
+    background-image: url(images/mobile/banksy_low.png);
+    background-repeat: no-repeat;
+}
+#design {
+    background-color: #E9E2D8;
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+}
+#redesign {
+    background-color: #E9E2D8;
+    width: 100%;
+    margin: auto 0;
+    text-align: center;
+}
+#sea {
+    width: 350px;
+    height: 350px;
+    background-image: url(images/desktop/1.png);
+    background-repeat: no-repeat;
+}
+
+/*//////////mobile Simple Animation/////////////////*/
+#kungfu {
+    flex-wrap: wrap;
+    background-color: #E9E2D8;
+    width: 100%;
+    height: 43vh;
+    text-align: center;
+    padding-top: 2px;
+}
+#panda,
+#fu {
+    height: 240px;
+    width: 155px;
+    margin: 0 auto;
+}
+#simple_head {
+    flex: 1 1 100%;
+}
+
+/*//////////Mobile Interactive Animation/////////////////*/
+#interactive_anim {
+    width: 100%;
+    background-color: #E9E2D8;
+}
+#mom {
+    background-image: url(images/desktop/sprite4.png);
+    width: 150.625px;
+    height: 33vh;
+    background-repeat: no-repeat;
+    margin-top: 35px;
+}
+#background {
+    width: 100%;
+    height: 300px;
+    background-image: url(images/desktop/backgr1.png);
+}
+
+/*//////////Mobile Pool1/////////////////*/
+#pool1 {
+    background-color: #E9E2D8;
+    text-align: center;
+}
+#pool1_images {
+    width: 100%;
+    height: 300px;
+    background-image: url(images/desktop/lillies.png);
+    background-repeat: no-repeat;
+}
+
+/*//////////Mobile Pool2/////////////////*/
+#pool2 {
+    background-color: #E9E2D8;
+    text-align: center;
+}
+#pool2_image {
+    width: 100%;
+    height: 300px;
+    background-image: url(images/desktop/back_drums.png);
+    margin: auto;
+}
+.key {
+    border: 4px solid black;
+    border-radius: 7px;
+    font-size: 1.7rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s;
+    width: 25px;
+    height: 10px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 5px black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    display: inline-block;
+}
+.keys {
+    display: inline-block;
+    margin-top: 200px
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
+kbd {
+    display: block;
+}
+.sound {
+    color: #ffc600;
+    font-size: 0.9rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*//////////Mobile Movie Teaser/////////////////*/
+#teaser_anim {
+    grid-area: teaser;
+    background-color: #E9E2D8;
+}
+#hitler {
+    background-image: url(images/desktop/hitler.png);
+    width: 220px;
+    height: 300px;
+}
+
+/*//////////Mobile Digital Agency/////////////////*/
+#agency {
+    grid-area: digitalAgency;
+    background-color: #E9E2D8;
+    margin-top: 50px;
+}
+#digital_page {
+    width: 100%;
+    height: 300px;
+}
+#boat_container {
+    grid-area: boat;
+    background-color: #E9E2D8;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+#logoTransparent {
+    width: 100px;
+    height: 50px;
+}
+.float {
+    animation: boatFloats infinite 3s forwards;
+}
+@keyframes boatFloats {
+    50% {
+        transform: translateY(-3vw);
+        transition-timing-function: ease-in-out;
+    }
+}
+
+/*//////////Mobile Alternative video/////////////////*/
+video {
+    transition: 1s opacity;
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+#alternative_video {
+    background-color: #E9E2D8;
+}
+
+/*//////////Mobile Urban video/////////////////*/
+#urbanite {
+    padding-bottom: 45px;
+    background-color: #E9E2D8;
+}
+#urban {
+    width: 100%;
+    height: 300px;
+}
+
+/*//////////Mobile web.html/////////////////*/
+h4 {
+    font-family: Montserrat;
+    font-size: 2em;
+}
+#web_redesign {
+    background-color: #B8C5CB;
+    padding: 20px;
+}
+#web_redesign img {
+    width: 95vw;
+    height: auto;
+}
+#web_redesign p {
+    text-align: left;
+    margin: 20px;
+}
+#web_redesign a {
+    color: #F2F2F2;
+}
+#web_redesign h3 {
+    color: #F2F2F2;
+    font-size: 2.2em;
+}
+#web_responsive {
+    background-color: #B8C5CB;
+}
+#web_responsive img {
+    width: 95vw;
+    height: auto;
+}
+#web_responsive p {
+    text-align: left;
+    margin: 20px;
+}
+#web_responsive a {
+    color: #F2F2F2;
+}
+#web_responsive h3 {
+    color: #F2F2F2;
+    font-size: 2.2em;
+}
+#web_heading {
+    margin-top: 150px;
+    width: 100%;
+    z-index: -2000;
+}
+#web_heading h2 {
+    text-align: center;
+}
+#logo_process {
+    display: flex;
+}
+#logo_process img {
+    width: 150px;
+    height: 150px;
+    padding-left: 6vw;
+}
+#web_responsive footer a {
+    display: none;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #585C5D;
+    font-size: 1.5em;
+}
+#back_index footer a {
+    margin: auto 0;
+}
+footer {
+    background-color: #FEEB89;
+    width: 200px;
+    height: 5vh;
+    margin: auto;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #585C5D;
+    font-size: 1.5em;
+}
+#web_redesign footer a {
+    color: #585C5D;
+}
+footer a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+#back_index {
+    grid-area: footer;
+}
+
+/*//////////Mobile animations.html/////////////////*/
+h4 {
+    font-family: Montserrat;
+    font-size: 2em;
+}
+#animations_teaser {
+    background-color: #D1BEB7;
+    padding: 20px;
+}
+#animations_teaser img {
+    width: 95vw;
+    height: auto;
+}
+#animations_teaser p {
+    text-align: left;
+    margin: 20px;
+}
+#animations_teaser a {
+    color: #F2F2F2;
+}
+#animations_teaser h3 {
+    color: #F2F2F2;
+    font-size: 2.2em;
+}
+#animations_interactive {
+    background-color: #D1BEB7;
+}
+#animations_interactive img {
+    width: 95vw;
+    height: auto;
+}
+#animations_interactive p {
+    text-align: left;
+    margin: 20px;
+}
+#animations_interactive a {
+    color: #F2F2F2;
+}
+#animations_interactive h3 {
+    color: #F2F2F2;
+    font-size: 2.2em;
+}
+#animations_heading {
+    margin-top: 150px;
+    width: 100%;
+    z-index: -2000;
+}
+#animations_heading h2 {
+    text-align: center;
+}
+#animations_interactive footer a {
+    display: none;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #585C5D;
+    font-size: 1.5em;
+}
+#back_index footer a {
+    margin: auto 0;
+}
+footer {
+    background-color: #FEEB89;
+    width: 200px;
+    height: 5vh;
+    margin: auto;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #585C5D;
+    font-size: 1.5em;
+}
+#animations_teaser footer a {
+    color: #585C5D;
+}
+footer a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+#back_index {
+    grid-area: footer;
+}
+
+/*//////////Mobile about.html/////////////////*/
+#me {
+    border-radius: 50%;
+}
+#about_me {
+    width: 100vw;
+    height: auto;
+    background-color: #FAC5C1;
+    text-align: center;
+}
+#about_heading {
+    margin-top: 155px;
+}
+
+/*//////////////////desktop style FOR frontpage/////////////////////*/
+@media only screen and (min-width: 666px) {
     body {
         width: 100vw;
-        overflow-x: hidden;
+        height: 100vh;
+        background-image: url(images/kea2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
     }
 
-    header {
-        background-color: #FEEB89;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding-bottom: 10px;
-    }
-
-    h3 {
-        color: #644E5B;
-        font-size: 1.8em;
-        font-family: Montserrat;
-        text-align: center;
-    }
-
-    #logo {
-        display: inline-block;
-        width: 150px;
-        grid-area: logo;
-        text-align: center;
-    }
-
-    #log {
-        width: 130px;
+    #slogan {
+        grid-area: slogan;
     }
 
     h1 {
-        font-size: 1.5em;
-        font-family: Montserrat;
-        text-align: center;
-        margin-bottom: 35px;
-        font-weight: 500;
-        padding-bottom: 10px;
-        padding-top: 20px;
-        margin-top: 135px;
-        color: #AB5055;
-        border-bottom: solid;
-        border-bottom-color: #644E5B;
-        width: 90%;
+        font-size: 2.7em;
+        border-bottom: none;
+        margin-bottom: 0px;
+        margin-top: 140px;
+        font-weight: 800;
+        width: 100%;
     }
 
     h2 {
-        font-family: Bookman Old Style;
-        font-size: 2.3em;
-        color: #FEEB89;
-        text-align: center;
+        line-height: 37vh;
+        vertical-align: middle;
         text-shadow: 2px 1px 5px black;
-    }
-
-    p {
-        font-size: 1.3em;
-        font-family: Montserrat;
-        display: block;
+        font-family: Bookman Old Style;
+        font-size: 5em;
+        text-shadow: 2px 1px 5px black;
         text-align: center;
-        margin: 0;
-    }
-    /*//////////Mobile Navigation/////////////////*/
-
-    li {
-        list-style: none;
     }
 
-    input {
-        display: none;
+    h3 {
+        color: #F2F2F2;
+        font-size: 2.5em;
+        text-align: center;
     }
+    /*//////////DESKTOP NAVIGATION/////////////////*/
 
-    label {
-        cursor: pointer;
-        font-size: 10vw;
-        margin-left: 40vw;
-    }
-
-    #navigation {
+    nav li {
         display: inline-block;
-        position: absolute;
-        margin-left: 1vw;
+        width: auto;
     }
 
     nav {
-        max-height: 0;
-        overflow: hidden;
-        background-color: #B8C5CB;
-        padding-right: 2vw;
-    }
-
-    input:checked~nav {
-        max-height: 25vh;
-        z-index: 5;
+        margin-top: 65px;
+        max-height: 35vh;
+        background: transparent;
+        width: 100vw;
     }
 
     nav a {
-        text-decoration: none;
-        color: #644E5B;
-        font-family: Montserrat;
-        line-height: 30px;
-        font-size: 1.2em;
-        font-weight: 900;
+        color: #585C5D;
+        font-size: 1.5em;
+        margin-right: 45px;
     }
 
     nav a:hover {
-        color: #585C5D;
-        background-color: rgba(255, 255, 255, 0.5);
-        text-decoration: none;
-        padding: 2px;
+        padding: 20px;
     }
 
-    nav a:active {
-        color: darkgray;
-        background-color: transparent;
-        text-decoration: underline;
+    label {
+        display: none;
     }
-    /*//////////Mobile Responsive Web design/////////////////*/
+
+    #index #navigation .index,
+    #web #navigation .web,
+    #about #navigation .about,
+    #animations #navigation .animations {
+        font-size: 2em;
+    }
+    /*//////////DESKTOP Web design/////////////////*/
 
     .swap {
-        width: 350px;
-        height: 350px;
-        background-image: url(images/mobile/banksy_low.png);
-        background-repeat: no-repeat;
+        width: 23vw;
+        height: 32vh;
+        margin: 0 auto;
+        background-image: url(images/desktop/moodboard_low.png);
     }
 
     #design {
-        background-color: #E9E2D8;
-        width: 100%;
-        margin: auto 0;
+        grid-area: responsiveDesign;
+        background-color: #585C5D;
+        padding-bottom: 41px;
         text-align: center;
     }
 
-    #redesign {
-        background-color: #E9E2D8;
-        width: 100%;
-        margin: auto 0;
-        text-align: center;
+    @keyframes change {
+        0% {
+            background-image: url(images/desktop/moodboard_low.png);
+        }
+        25% {
+            background-image: url(images/desktop/web_low.png);
+        }
+        50% {
+            background-image: url(images/desktop/web_logo_low.png);
+        }
+        75% {
+            background-image: url(images/desktop/web_xd_low.png);
+        }
+        100% {
+            background-image: url(images/desktop/web_perfect_low.png);
+        }
     }
+
+    .swap:hover {
+        animation: change 8s infinite;
+        cursor: pointer;
+    }
+
+    #web_head {
+        grid-area: webDesign;
+        border: solid;
+        border-color: #585C5D;
+        padding: 15px 0;
+        width: 100%;
+        border-width: 45px;
+    }
+    /*//////////DESKTOP Web redesign/////////////////*/
 
     #sea {
-        width: 350px;
-        height: 350px;
+        width: 23vw;
+        height: 32vh;
         background-image: url(images/desktop/1.png);
         background-repeat: no-repeat;
     }
-    /*//////////mobile Simple Animation/////////////////*/
+
+    #redesign {
+        grid-area: basicRedesign;
+        background-color: #585C5D;
+        text-align: center;
+        padding-bottom: 41px;
+        margin-right: 65px;
+    }
+
+    @keyframes changing {
+        0% {
+            background-image: url(images/desktop/1.png);
+        }
+        25% {
+            background-image: url(images/desktop/3.png);
+        }
+        50% {
+            background-image: url(images/desktop/4.png);
+        }
+        75% {
+            background-image: url(images/desktop/5.png);
+        }
+        100% {
+            background-image: url(images/desktop/8.png);
+        }
+    }
+
+    #sea:hover {
+        animation: changing 8s infinite;
+        cursor: pointer;
+    }
+    /*//////////DESKTOP Simple Animation/////////////////*/
 
     #kungfu {
+        grid-area: pandas;
         flex-wrap: wrap;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
         width: 100%;
         height: 43vh;
         text-align: center;
+        cursor: pointer;
         padding-top: 2px;
+        padding-bottom: 65px;
     }
 
     #panda,
     #fu {
-        height: 240px;
-        width: 155px;
+        width: auto;
+        height: 32vh;
         margin: 0 auto;
+    }
+
+    #animation_head {
+        grid-area: animHead;
+        margin-top: 0px;
+        border: solid;
+        border-color: #585C5D;
+        width: 100%;
+        border-width: 45px;
+        margin-bottom: 0;
     }
 
     #simple_head {
         flex: 1 1 100%;
     }
-    /*//////////Mobile Interactive Animation/////////////////*/
+
+    .kungJump {
+        animation: jumpIt infinite 1.2s forwards;
+    }
+
+    .fuJump {
+        animation: jumpIt 1.2s 0.6s infinite;
+    }
+
+    @keyframes jumpIt {
+        50% {
+            transform: translateY(-30vh);
+            transition-timing-function: ease-in;
+        }
+    }
+    /*//////////DESKTOP Interactive Animation/////////////////*/
 
     #interactive_anim {
+        grid-area: interactive;
         width: 100%;
-        background-color: #E9E2D8;
+        margin-top: 0px;
+        background-color: #585C5D;
+        padding-bottom: 41px;
     }
 
     #mom {
@@ -179,36 +711,95 @@
         margin-top: 35px;
     }
 
-    #background {
-        width: 100%;
-        height: 300px;
-        background-image: url(images/desktop/backgr1.png);
+    .mom_moves {
+        animation: walk 2s steps(8) forwards infinite;
     }
-    /*//////////Mobile Pool1/////////////////*/
+
+    @keyframes walk {
+        to {
+            background-position: -1205px;
+        }
+    }
+
+    #trololo {
+        width: 150.625px;
+        display: inline-block;
+    }
+
+    .trololo_moves {
+        animation: movement 8s forwards;
+    }
+
+    #background {
+        width: 23vw;
+        height: 32vh;
+        background-image: url(images/desktop/backgr1.png);
+        cursor: pointer;
+    }
+
+    @keyframes movement {
+        from {
+            transform: translateX(3vw);
+        }
+        to {
+            transform: translateX(30vw);
+        }
+    }
+    /*//////////DESKTOP Pool1/////////////////*/
 
     #pool1 {
-        background-color: #E9E2D8;
+        grid-area: pool1;
+        background-color: #585C5D;
         text-align: center;
+        padding-bottom: 41px;
+        margin-top: 10px;
     }
 
     #pool1_images {
-        width: 100%;
-        height: 300px;
-        background-image: url(images/desktop/lillies.png);
+        width: 23vw;
+        height: 33vh;
+        margin: 0 auto;
+        background-image: url(images/desktop/sunflowers.png);
         background-repeat: no-repeat;
     }
-    /*//////////Mobile Pool2/////////////////*/
+
+    @keyframes swap {
+        0% {
+            background-image: url(images/desktop/sunflowers.png);
+        }
+        25% {
+            background-image: url(images/desktop/peonies.png);
+        }
+        50% {
+            background-image: url(images/desktop/peonies2.png);
+        }
+        75% {
+            background-image: url(images/desktop/yellow.png);
+        }
+        100% {
+            background-image: url(images/desktop/lillies.png);
+        }
+    }
+
+    #pool1_images:hover {
+        animation: swap 8s infinite;
+        cursor: pointer;
+    }
+    /*//////////DESKTOP Pool2/////////////////*/
 
     #pool2 {
-        background-color: #E9E2D8;
+        grid-area: pool2;
+        background-color: #585C5D;
         text-align: center;
+        margin-top: 10px;
     }
 
     #pool2_image {
-        width: 100%;
-        height: 300px;
+        width: 23vw;
+        height: 33vh;
         background-image: url(images/desktop/back_drums.png);
         margin: auto;
+        cursor: pointer;
     }
 
     .key {
@@ -217,8 +808,8 @@
         font-size: 1.7rem;
         padding: 1rem 0.5rem;
         transition: all 0.07s;
-        width: 25px;
-        height: 10px;
+        width: 45px;
+        height: 25px;
         text-align: center;
         color: aliceblue;
         background-color: rgba(255, 255, 255, 0.8);
@@ -230,7 +821,7 @@
 
     .keys {
         display: inline-block;
-        margin-top: 200px
+        margin-top: 285px
     }
 
     .playing {
@@ -245,14 +836,16 @@
 
     .sound {
         color: #ffc600;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-family: 'Open Sans Condensed', sans-serif;
     }
-    /*//////////Mobile Movie Teaser/////////////////*/
+    /*//////////DESKTOP Movie Teaser/////////////////*/
 
     #teaser_anim {
         grid-area: teaser;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
+        cursor: pointer;
+        margin-top: 10px;
     }
 
     #hitler {
@@ -260,30 +853,56 @@
         width: 220px;
         height: 300px;
     }
-    /*//////////Mobile Digital Agency/////////////////*/
+
+    .heilHitler {
+        animation: handUp 1.5s steps(14);
+    }
+
+    @keyframes handUp {
+        to {
+            background-position: -3080px;
+        }
+    }
+    /*//////////DESKTOP Digital Agency/////////////////*/
+
+    #digital_head {
+        grid-area: basicUX;
+        margin-top: 50px;
+        border: solid;
+        border-color: #585C5D;
+        width: 100%;
+        border-width: 45px;
+        padding-bottom: 73px;
+        margin-bottom: 0px;
+    }
 
     #agency {
         grid-area: digitalAgency;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
         margin-top: 50px;
+        padding-bottom: 41px;
+        text-align: center;
     }
 
     #digital_page {
-        width: 100%;
-        height: 300px;
+        width: 23vw;
+        height: 33vh;
+        cursor: pointer;
     }
 
     #boat_container {
         grid-area: boat;
-        background-color: #E9E2D8;
+        background-color: #585C5D;
+        margin-top: 50px;
         width: 100%;
         cursor: pointer;
         text-align: center;
     }
 
     #logoTransparent {
-        width: 100px;
-        height: 50px;
+        margin-top: 150px;
+        width: 80%;
+        height: auto;
     }
 
     .float {
@@ -296,437 +915,219 @@
             transition-timing-function: ease-in-out;
         }
     }
-    /*//////////Mobile Alternative video/////////////////*/
+    /*//////////DESKTOP Alternative video/////////////////*/
 
     video {
         transition: 1s opacity;
-        width: 100%;
-        height: 300px;
+        height: 33vh;
         cursor: pointer;
     }
 
-    #alternative_video {
-        background-color: #E9E2D8;
+    #video_head {
+        grid-area: videoHead;
+        margin-top: 50px;
+        border: solid;
+        border-color: #585C5D;
+        width: 100%;
+        border-width: 45px;
+        margin-bottom: 0;
     }
-    /*//////////Mobile Urban video/////////////////*/
+
+    #alternative_video {
+        grid-area: alternativeVideo;
+        background-color: #585C5D;
+        margin-top: 50px;
+        padding-bottom: 41px;
+        text-align: center;
+    }
+    /*//////////DESKTOP Alternative video/////////////////*/
 
     #urbanite {
-        padding-bottom: 45px;
-        background-color: #E9E2D8;
+        grid-area: urbanVideo;
+        background-color: #585C5D;
+        margin-top: 50px;
+        padding-bottom: 41px;
+        width: 100%;
+        text-align: center;
+        margin-right: 65px;
     }
 
     #urban {
-        width: 100%;
-        height: 300px;
+        width: 23vw;
+        height: 33vh;
+        cursor: pointer;
     }
-    /*//////////////////desktop style FOR frontpage/////////////////////*/
 
-    @media only screen and (min-width:666px) {
-        body {
-            width: 100vw;
-            height: 100vh;
-            background-image: url(images/kea2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            margin: 0;
-        }
-        #slogan {
-            grid-area: slogan;
-        }
-        h1 {
-            font-size: 2.7em;
-            border-bottom: none;
-            margin-bottom: 0px;
-            margin-top: 140px;
-            font-weight: 800;
-            width: 100%;
-        }
-        h2 {
-            line-height: 37vh;
-            vertical-align: middle;
-            text-shadow: 2px 1px 5px black;
-            font-family: Bookman Old Style;
-            font-size: 5em;
-            text-shadow: 2px 1px 5px black;
-        }
-        h3 {
-            color: #F2F2F2;
-            font-size: 2.5em;
-            text-align: center;
-        }
-        /*//////////DESKTOP Web design/////////////////*/
-        .swap {
-            width: 23vw;
-            height: 32vh;
-            margin: 0 auto;
-            background-image: url(images/desktop/moodboard_low.png);
-        }
-        #design {
-            grid-area: responsiveDesign;
-            background-color: #585C5D;
-            padding-bottom: 41px;
-            text-align: center;
-        }
-        @keyframes change {
-            0% {
-                background-image: url(images/desktop/moodboard_low.png);
-            }
-            25% {
-                background-image: url(images/desktop/web_low.png);
-            }
-            50% {
-                background-image: url(images/desktop/web_logo_low.png);
-            }
-            75% {
-                background-image: url(images/desktop/web_xd_low.png);
-            }
-            100% {
-                background-image: url(images/desktop/web_perfect_low.png);
-            }
-        }
-        .swap:hover {
-            animation: change 8s infinite;
-            cursor: pointer;
-        }
-        #web_head {
-            grid-area: webDesign;
-            border: solid;
-            border-color: #585C5D;
-            padding: 15px 0;
-            width: 100%;
-            border-width: 45px;
-        }
-        /*//////////DESKTOP Web redesign/////////////////*/
-        #sea {
-            width: 23vw;
-            height: 32vh;
-            background-image: url(images/desktop/1.png);
-            background-repeat: no-repeat;
-        }
-        #redesign {
-            grid-area: basicRedesign;
-            background-color: #585C5D;
-            text-align: center;
-            padding-bottom: 41px;
-            margin-right: 65px;
-        }
-        @keyframes changing {
-            0% {
-                background-image: url(images/desktop/1.png);
-            }
-            25% {
-                background-image: url(images/desktop/3.png);
-            }
-            50% {
-                background-image: url(images/desktop/4.png);
-            }
-            75% {
-                background-image: url(images/desktop/5.png);
-            }
-            100% {
-                background-image: url(images/desktop/8.png);
-            }
-        }
-        #sea:hover {
-            animation: changing 8s infinite;
-            cursor: pointer;
-        }
-        /*//////////DESKTOP Simple Animation/////////////////*/
-        #kungfu {
-            grid-area: pandas;
-            flex-wrap: wrap;
-            background-color: #585C5D;
-            width: 100%;
-            height: 43vh;
-            text-align: center;
-            cursor: pointer;
-            padding-top: 2px;
-            padding-bottom: 65px;
-        }
-        #panda,
-        #fu {
-            width: auto;
-            height: 32vh;
-            margin: 0 auto;
-        }
-        #animation_head {
-            grid-area: animHead;
-            margin-top: 0px;
-            border: solid;
-            border-color: #585C5D;
-            width: 100%;
-            border-width: 45px;
-            margin-bottom: 0;
-        }
-        #simple_head {
-            flex: 1 1 100%;
-        }
-        .kungJump {
-            animation: jumpIt infinite 1.2s forwards;
-        }
-        .fuJump {
-            animation: jumpIt 1.2s 0.6s infinite;
-        }
-        @keyframes jumpIt {
-            50% {
-                transform: translateY(-30vh);
-                transition-timing-function: ease-in;
-            }
-        }
-        /*//////////DESKTOP Interactive Animation/////////////////*/
-        #interactive_anim {
-            grid-area: interactive;
-            width: 100%;
-            margin-top: 0px;
-            background-color: #585C5D;
-            padding-bottom: 41px;
-        }
-        #mom {
-            background-image: url(images/desktop/sprite4.png);
-            width: 150.625px;
-            height: 33vh;
-            background-repeat: no-repeat;
-            margin-top: 35px;
-        }
-        .mom_moves {
-            animation: walk 2s steps(8) forwards infinite;
-        }
-        @keyframes walk {
-            to {
-                background-position: -1205px;
-            }
-        }
-        #trololo {
-            width: 150.625px;
-            display: inline-block;
-        }
-        .trololo_moves {
-            animation: movement 8s forwards;
-        }
-        #background {
-            width: 23vw;
-            height: 32vh;
-            background-image: url(images/desktop/backgr1.png);
-            cursor: pointer;
-        }
-        @keyframes movement {
-            from {
-                transform: translateX(3vw);
-            }
-            to {
-                transform: translateX(30vw);
-            }
-        }
-        /*//////////DESKTOP Pool1/////////////////*/
-        #pool1 {
-            grid-area: pool1;
-            background-color: #585C5D;
-            text-align: center;
-            padding-bottom: 41px;
-            margin-top: 10px;
-        }
-        #pool1_images {
-            width: 23vw;
-            height: 33vh;
-            margin: 0 auto;
-            background-image: url(images/desktop/sunflowers.png);
-            background-repeat: no-repeat;
-        }
-        @keyframes swap {
-            0% {
-                background-image: url(images/desktop/sunflowers.png);
-            }
-            25% {
-                background-image: url(images/desktop/peonies.png);
-            }
-            50% {
-                background-image: url(images/desktop/peonies2.png);
-            }
-            75% {
-                background-image: url(images/desktop/yellow.png);
-            }
-            100% {
-                background-image: url(images/desktop/lillies.png);
-            }
-        }
-        #pool1_images:hover {
-            animation: swap 8s infinite;
-            cursor: pointer;
-        }
-        /*//////////DESKTOP Pool2/////////////////*/
-        #pool2 {
-            grid-area: pool2;
-            background-color: #585C5D;
-            text-align: center;
-            margin-top: 10px;
-        }
-        #pool2_image {
-            width: 23vw;
-            height: 33vh;
-            background-image: url(images/desktop/back_drums.png);
-            margin: auto;
-            cursor: pointer;
-        }
-        .key {
-            border: 4px solid black;
-            border-radius: 7px;
-            font-size: 1.7rem;
-            padding: 1rem 0.5rem;
-            transition: all 0.07s;
-            width: 45px;
-            height: 25px;
-            text-align: center;
-            color: aliceblue;
-            background-color: rgba(255, 255, 255, 0.8);
-            text-shadow: 0 0 5px black;
-            font-family: 'Open Sans Condensed', sans-serif;
-            font-weight: 600;
-            display: inline-block;
-        }
-        .keys {
-            display: inline-block;
-            margin-top: 285px
-        }
-        .playing {
-            transform: scale(1.1);
-            border-color: #ffc600;
-            box-shadow: 0 0 10px #ffc600;
-        }
-        kbd {
-            display: block;
-        }
-        .sound {
-            color: #ffc600;
-            font-size: 1rem;
-            font-family: 'Open Sans Condensed', sans-serif;
-        }
-        /*//////////DESKTOP Movie Teaser/////////////////*/
-        #teaser_anim {
-            grid-area: teaser;
-            background-color: #585C5D;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        #hitler {
-            background-image: url(images/desktop/hitler.png);
-            width: 220px;
-            height: 300px;
-        }
-        .heilHitler {
-            animation: handUp 1.5s steps(14);
-        }
-        @keyframes handUp {
-            to {
-                background-position: -3080px;
-            }
-        }
-        /*//////////DESKTOP Digital Agency/////////////////*/
-        #digital_head {
-            grid-area: basicUX;
-            margin-top: 50px;
-            border: solid;
-            border-color: #585C5D;
-            width: 100%;
-            border-width: 45px;
-            padding-bottom: 73px;
-            margin-bottom: 0px;
-        }
-        #agency {
-            grid-area: digitalAgency;
-            background-color: #585C5D;
-            margin-top: 50px;
-            padding-bottom: 41px;
-            text-align: center;
-        }
-        #digital_page {
-            width: 23vw;
-            height: 33vh;
-            cursor: pointer;
-        }
-        #boat_container {
-            grid-area: boat;
-            background-color: #585C5D;
-            margin-top: 50px;
-            width: 100%;
-            cursor: pointer;
-            text-align: center;
-        }
-        #logoTransparent {
-            margin-top: 150px;
-            width: 80%;
-            height: auto;
-        }
-        .float {
-            animation: boatFloats infinite 3s forwards;
-        }
-        @keyframes boatFloats {
-            50% {
-                transform: translateY(-3vw);
-                transition-timing-function: ease-in-out;
-            }
-        }
-        /*//////////DESKTOP Alternative video/////////////////*/
-        video {
-            transition: 1s opacity;
-            height: 33vh;
-            cursor: pointer;
-        }
-        #video_head {
-            grid-area: videoHead;
-            margin-top: 50px;
-            border: solid;
-            border-color: #585C5D;
-            width: 100%;
-            border-width: 45px;
-            margin-bottom: 0;
-        }
-        #alternative_video {
-            grid-area: alternativeVideo;
-            background-color: #585C5D;
-            margin-top: 50px;
-            padding-bottom: 41px;
-            text-align: center;
-        }
-        /*//////////DESKTOP Alternative video/////////////////*/
-        #urbanite {
-            grid-area: urbanVideo;
-            background-color: #585C5D;
-            margin-top: 50px;
-            padding-bottom: 41px;
-            width: 100%;
-            text-align: center;
-            margin-right: 65px;
-        }
-        #urban {
-            width: 23vw;
-            height: 33vh;
-            cursor: pointer;
-        }
-        /*//////////DESKTOP NAVIGATION/////////////////*/
-        nav li {
-            width: 250px;
-            text-align: center;
-            display: inline-block;
-        }
-        nav {
-            margin-top: 75px;
-            max-height: 35vh;
-            grid-area: navBar;
-            background: transparent;
-        }
-        nav a {
-            color: 585C5D;
-            font-size: 1.8em;
-        }
-        nav a:hover {
-            padding: 20px;
-        }
-        label {
-            display: none;
-        }
-        #grid {
-            display: grid;
-            grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat" "videoHead alternativeVideo urbanVideo";
-        }
+    #grid {
+        display: grid;
+        grid-template-areas: "slogan slogan slogan" "webDesign responsiveDesign basicRedesign" "animHead pandas interactive" "pool1 pool2 teaser" "basicUX digitalAgency boat" "videoHead alternativeVideo urbanVideo" ". footer .";
     }
+    /*//////////DESKTOP web.html/////////////////*/
+
+    h4 {
+        font-family: Montserrat;
+        font-size: 2em;
+    }
+
+    #web_redesign {
+        grid-area: web_redesign;
+        background-color: #B8C5CB;
+        margin-top: 290px;
+        margin-right: 40px;
+        padding: 25px;
+    }
+
+    #web_redesign img {
+        width: 30vw;
+        height: 40vh;
+        padding-left: 9vw;
+    }
+
+    #web_redesign p {
+        text-align: left;
+        margin: 20px;
+    }
+
+    #web_redesign a {
+        color: #F2F2F2;
+    }
+
+    #web_responsive {
+        grid-area: responsive;
+        background-color: #B8C5CB;
+        margin-top: 290px;
+        margin-left: 40px;
+        padding: 25px;
+    }
+
+    #web_responsive img {
+        width: 30vw;
+        height: 40vh;
+        padding-left: 6vw;
+    }
+
+    #web_responsive p {
+        text-align: left;
+        margin: 20px;
+    }
+
+    #web_responsive a {
+        color: #F2F2F2;
+    }
+
+    #web_heading {
+        position: absolute;
+        margin-top: 50px;
+        width: 100%;
+        z-index: -2000;
+    }
+
+    #web_heading h2 {
+        text-align: center;
+    }
+
+    #logo_process {
+        display: flex;
+    }
+
+    #logo_process img {
+        width: 15vw;
+        height: 25vh;
+        padding-left: 6vw;
+    }
+
+    #web_responsive footer a {
+        display: block;
+    }
+
+    #grid_web {
+        display: grid;
+        grid-template-areas: "responsive web_redesign";
+        grid-column-gap: 30px;
+    }
+    /*//////////DESKTOP animations.html/////////////////*/
+
+    #animations_interactive {
+        grid-area: interactive;
+        background-color: #D1BEB7;
+        margin-top: 300px;
+        margin-left: 40px;
+        padding: 25px;
+    }
+
+    #animations_interactive img {
+        width: 30vw;
+        height: 40vh;
+        padding-left: 9vw;
+    }
+
+    #animations_interactive p {
+        text-align: left;
+        margin: 20px;
+    }
+
+    #animations_interactive a {
+        color: #F2F2F2;
+    }
+
+    #animations_teaser {
+        grid-area: animations_teaser;
+        background-color: #D1BEB7;
+        margin-top: 300px;
+        margin-right: 40px;
+        padding: 25px;
+    }
+
+    #animations_teaser img {
+        width: 30vw;
+        height: 40vh;
+        padding-left: 6vw;
+    }
+
+    #animations_teaser p {
+        text-align: left;
+        margin: 20px;
+    }
+
+    #animations_teaser a {
+        color: #F2F2F2;
+    }
+
+    #animations_heading {
+        position: absolute;
+        margin-top: 50px;
+        width: 100%;
+        z-index: -2000;
+    }
+
+    #animations_heading h2 {
+        text-align: center;
+    }
+
+    #animations_interactive footer a {
+        display: block;
+    }
+
+    #grid_animations {
+        display: grid;
+        grid-template-areas: "interactive animations_teaser";
+        grid-column-gap: 30px;
+    }
+    /*//////////DESKTOP web.html/////////////////*/
+
+    #me {
+        border-radius: 50%;
+    }
+
+    #about_me {
+        width: 30vw;
+        height: 40vh;
+        background-color: #FAC5C1;
+        text-align: center;
+        margin-left: 33vw;
+    }
+
+    #about_heading {
+        margin-top: 20px;
+    }
+}

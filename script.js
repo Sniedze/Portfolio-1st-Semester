@@ -1,10 +1,19 @@
 let pictures = document.querySelector(".swap");
 
-pictures.addEventListener("click", clicked);
+pictures.addEventListener("click", clic);
 
-function clicked() {
+function clic() {
     window.location = "web.html";
 }
+
+let divingPictures = document.querySelector("#sea");
+
+divingPictures.addEventListener("click", cl);
+
+function cl() {
+    window.location = "web.html";
+}
+
 
 let panda = document.querySelector("#panda");
 let fu = document.querySelector("#fu");
@@ -26,7 +35,7 @@ function jumpLeft() {
 pandaImage.addEventListener("click", pandaClicked);
 
 function pandaClicked() {
-    window.location = "web.html";
+    window.open("http://soperfect.dk/kea/02-animation/animation/", "_blank");
 }
 let trololoMom = document.querySelector("#mom");
 let momContainer = document.querySelector("#trololo");
@@ -46,14 +55,14 @@ function myEndFunction() {
 interactiveImage.addEventListener("click", interactiveClicked);
 
 function interactiveClicked() {
-    window.location = "web.html";
+    window.location = "animations.html";
 }
 
 let flowers = document.querySelector("#pool1_images");
 flowers.addEventListener("click", flowersClicked);
 
 function flowersClicked() {
-    window.location = "http://soperfect.dk/kea/02-animation/pool1/";
+    window.open("http://soperfect.dk/kea/02-animation/pool1/", "_blank");
 }
 
 let a = document.querySelector("#a");
@@ -177,7 +186,7 @@ let drums = document.querySelector("#pool2_image");
 drums.addEventListener("click", drumsClicked);
 
 function drumsClicked() {
-    window.location = "http://soperfect.dk/kea/02-animation/drums/";
+    window.open("http://soperfect.dk/kea/02-animation/drums/", "_blank");
 }
 let hit = document.querySelector("#teaser_anim");
 let heilMyself = document.querySelector("#myself");
@@ -221,7 +230,7 @@ boatContainer.addEventListener("click", boatClicked);
 boatBackground.addEventListener("click", boatClicked);
 
 function boatClicked() {
-    window.location = "web.html";
+    window.open("http://www.soperfect.dk/kea/04-ux/", "_blank");
 }
 let videoContainer = document.querySelector("#alternative_video");
 let alternativeVideo = document.querySelector("#bgvid");
@@ -244,5 +253,5 @@ function videoEnds() {
 alternativeVideo.addEventListener("click", videoClicked);
 
 function videoClicked() {
-    window.location = "web.html";
+    window.open("http://www.soperfect.dk/kea/03-video/alternativeKBH/", "_blank");
 }

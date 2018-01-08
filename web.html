@@ -7,31 +7,73 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div id="grid">
-    <header>
-        <div id="logo">
-            <img id="log" src="images/logo.jpg" alt="So Perfect logo">
-            <p>by Ulrika</p>
-        </div>
-        <div id="navigation">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Digital Agency</a></li>
-                    <li><a href="#">Animations</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">About me</a></li>
-                </ul>
-            </nav>
-        </div>
 
-    </header>
+<header id="web">
+    <div id="logo">
+        <img id="log" src="images/logo.png" alt="So Perfect logo">
+        <p>by Ulrika</p>
+    </div>
+    <div id="navigation">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <nav>
+            <ul>
+                <li class="index"><a href="index.html">Home</a></li>
+                <li class="web"><a href="web.html">Web Design</a></li>
+                <li class="animations"><a href="animations.html">Animations</a></li>
+                <li class="ux"><a href="http://www.soperfect.dk/kea/04-ux/" target="_blank">Basic UX</a></li>
+                <li class="video"><a href="http://www.soperfect.dk/kea/03-video/alternativeKBH/" target="_blank">Video</a></li>
+                <li><a class="about" href="about.html">About me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<div id="grid_web">
 
     <body>
-        <script src=""></script>
+        <h2 id="web_heading"> Web Design</h2>
+        <div id="web_responsive">
+            <h3> Responsive Website</h3>
+            <h4>Overview</h4>
+            <p>The goal of this individual assignment was to create a responsive website about OP Art style. <a href="http://soperfect.dk/kea/01-web/responsive" target="_blank">Link to the website</a></p>
+
+            <img src="images/desktop/web.png">
+            <p> This is the moodboard about OP Art Style. </p>
+            <img src="images/desktop/moodboard.png">
+            <h4>Process</h4>
+            <p>Since the OP Art itself is very intensive in colors, the background color of my web site will be white, the background of the logo and main heading will be grey. For titles and borders I will use colors which nicely resonate with artwork pictures.</p>
+            <img src="images/desktop/web_palette%20_low.png">
+            <p>I drew the name of my domain in Op Art style. I called my web site "So Perfect", because all good intentions, all good ideas, every good person is perfect, perfect with all their imperfections.</p>
+            <div id="logo_process">
+                <img src="images/desktop/web_logo.png">
+                <img src="images/desktop/web_perfect.png">
+            </div>
+            <p>This is the interactive prototype for mobile version of the page.</p>
+            <img src="images/desktop/web_xd.png"><br>
+            <footer><a id="back" href="web.html">Back to Top</a></footer>
+
+        </div>
+
+        <div id="web_redesign">
+            <h3> Website Redesign</h3>
+            <h4>Overview</h4>
+            <p><a href="http://soperfect.dk/kea/01-web/group" target="_blank">Link to the redesigned website</a></p>
+            <p>The goal of this group assignment was to redesign a poorly looking website "Irish Shipwrecks".</p>
+            <img src="images/desktop/redesign_old.png">
+            <h4>Process</h4>
+            <p>We began by surveying users to find out what we already new - the page is unclear, difficult to navigate, and visually unestetique.<br> The team created a style tile and logo.</p>
+            <img src="images/desktop/redesign_style.png">
+            <p> Based on wireframes and a style tile, interactive prototype was made.</p>
+            <img src="images/desktop/redesign_xd.jpg">
+            <p>This is the screenshot of the new redesigned page and the link to it. </p>
+            <img src="images/desktop/redesign_new.jpg"><br>
+
+            <footer><a href="web.html">Back to Top</a></footer>
+        </div>
+
+
+        <script src="script.js"></script>
     </body>
 </div>
 
